@@ -31,7 +31,7 @@
         h1, h2, h3, h4 { font-family: 'Playfair Display', Georgia, serif; font-weight: 600; }
 
         header { background: var(--white); padding: 1rem 0; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
-        .header-container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; display: flex; justify-content: space-between; align-items: center; min-height: 80px; }
+        .header-container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; display: flex; justify-content: space-between; align-items: center; min-height: 100px; }
         .logo { display: flex; flex-direction: column; align-items: flex-start; }
         .logo img { height: 90px; width: auto; object-fit: contain; }
         .logo-fallback { display: flex; flex-direction: column; align-items: flex-start; }
@@ -50,7 +50,7 @@
         .header-icon-btn svg { width: 24px; height: 24px; fill: white; }
         .header-icon-btn.meeting svg { fill: var(--charcoal); }
 
-        .hero { background: linear-gradient(135deg, var(--teal-dark) 0%, var(--teal-primary) 100%); padding: 8rem 1.5rem 3rem; }
+        .hero { background: linear-gradient(135deg, var(--teal-dark) 0%, var(--teal-primary) 100%); padding: 9rem 1.5rem 3rem; }
         .hero-container { max-width: 1200px; margin: 0 auto; }
         .hero-content { text-align: center; max-width: 1000px; margin: 0 auto; }
         .hero h1 { font-size: 3.08rem; color: var(--white); line-height: 1.2; margin-bottom: 1rem; }
@@ -180,14 +180,14 @@
         .contact-text a:hover { color: var(--gold); }
         .contact-text span { display: block; font-size: 0.8rem; color: rgba(255,255,255,0.6); margin-bottom: 0.25rem; text-transform: uppercase; letter-spacing: 0.05em; }
 
-        footer { background: #1a1a1a; padding: 2.2rem 1.5rem; text-align: center; }
+        footer { background: #c0c0c0; padding: 2.2rem 1.5rem; text-align: center; }
         .footer-logo { display: flex; flex-direction: column; align-items: center; margin-bottom: 1.1rem; }
-        .footer-logo img { height: 90px; width: auto; object-fit: contain;  }
+        .footer-logo img { height: 90px; width: auto; object-fit: contain; }
         .footer-logo-fallback { display: flex; flex-direction: column; align-items: center; }
         .footer-logo-text { font-family: 'Open Sans', sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--white); letter-spacing: 0.05em; line-height: 1.1; }
         .footer-logo-text span { color: var(--gold); }
         .footer-logo-sub { font-size: 0.7rem; color: #888; letter-spacing: 0.25em; text-transform: uppercase; }
-        footer p:last-child { color: #666; font-size: 0.935rem; }
+        footer p:last-child { color: #333; font-size: 0.935rem; }
 
         @media (max-width: 1000px) {
             .stats-row { grid-template-columns: repeat(2, 1fr); }
@@ -197,8 +197,8 @@
             .services-grid { grid-template-columns: repeat(2, 1fr); }
             .solution-grid, .retirement-grid, .estate-grid, .contact-grid { grid-template-columns: 1fr; }
             .join-team-wrapper { grid-template-columns: 1fr; }
-            .join-team-image { height: 350px; }
-            .join-image-placeholder { width: 100%; }
+            .join-team-image { height: auto; padding: 5%; }
+            .join-team-image img { max-height: 280px; }
         }
         @media (max-width: 600px) {
             .hero h1 { font-size: 2.09rem; }
@@ -245,7 +245,7 @@
     <section class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1>Can a serious illness in your old age <em>hurt your children financially</em> during your Gap Zone years?</h1>
+                <h1>Can a serious illness in your old age<br><em>hurt your children financially</em> during<br>your Gap Zone years?</h1>
                 <p class="hero-subtitle">Have you asked what your work insurance WON'T cover?</p>
                 <div class="stats-row">
                     <div class="stat-group">
